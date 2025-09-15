@@ -17,5 +17,7 @@ npm install ejs
 
 Comando para rodar o servidor no terminal (pelo Visual Studio Code na pasta do projeto):
 
-```npx nodemon index.js```
+~~~bash
+npx nodemon index.js
+~~~
 
