@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Docinho</h1>
+        <h3>Docinho lindona rabuda.</h3>
+    </header>
+
+    <div class="galeria">
+        <% lindas.forEach(linda => { %>
+            <figure>
+                <img src="/images/<%= linda.fotinha %>">
+            </figure>
+        <% }) %>
+    </div>
+
+    <a href="/" class="btn-volta">Voltar</a>
+
+</body>
+
+</html>
