@@ -1,101 +1,91 @@
-/* Faz o body ocupar toda a altura da tela e organiza o layout em coluna */
 body {
-    min-height: 100vh;           /* Garante altura mínima igual à tela */
-    display: flex;               /* Ativa flexbox */
-    flex-direction: column;      /* Organiza em coluna */
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
     background-color: #1e0b4b;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Faz o main crescer para ocupar o espaço disponível */
 main {
-    flex: 1;                     /* Ocupa todo o espaço restante */
+    flex: 1; 
 }
 
-/* Estiliza o cabeçalho da página */
 header {
-    width: 100vw; /* Ocupa toda a largura da janela */
-    background: #371251; /* Cor de fundo do header */
-    color: #fff; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 40px 0 20px 0; /* Espaçamento interno: topo, direita, baixo, esquerda */
-    margin-bottom: 30px; /* Espaço abaixo do header */
+    width: 100vw;
+    background: #371251;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0 20px 0;
+    margin-bottom: 30px;
 }
 
-/* Estiliza o título principal dentro do header */
 header h1 {
-    margin: 0; /* Remove margens padrão */
-    font-size: 2.5rem; /* Tamanho grande para o título */
-    letter-spacing: 2px; /* Espaçamento entre letras */
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 
-/* Estiliza o subtítulo dentro do header */
 header h3 {
-    margin: 10px 0 0 0; /* Espaço acima do subtítulo */
-    font-weight: normal; /* Peso da fonte normal */
-    font-size: 1.3rem; /* Tamanho do subtítulo */
-    letter-spacing: 1px; /* Espaçamento entre letras */
+    margin: 10px 0 0 0;
+    font-weight: normal;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
 }
 
-/* Estiliza o container principal das opções */
 .options {
-    display: flex; /* Usa flexbox para alinhar os itens */
-    align-items: center; /* Alinha verticalmente ao centro */
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 40px; /* Espaço entre os itens */
-    position: relative; /* Permite posicionamento relativo de elementos filhos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
 }
 
-/* Estiliza todas as imagens dentro de .options */
 .options img {
-    border-radius: 50%; /* Deixa as imagens circulares */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animação suave ao passar o mouse */
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15); /* Sombra ao redor da imagem */
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
-/* Efeito ao passar o mouse sobre as imagens */
 .options img:hover {
-    transform: scale(1.08); /* Aumenta, levanta e gira levemente */
-    box-shadow: 0 8px 24px rgba(33,150,243,0.25); /* Sombra mais intensa */
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(33,150,243,0.25);
 }
 
-/* Estiliza os links com aparência de botão */
 .btn-link {
-    display: inline-block; /* Permite definir largura/altura e margens */
-    margin-top: 15px; /* Espaço acima do botão */
-    padding: 10px 28px; /* Espaçamento interno do botão */
-    background: #371251; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    text-decoration: none; /* Remove sublinhado */
-    border-radius: 25px; /* Bordas arredondadas */
-    font-weight: bold; /* Texto em negrito */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-shadow: 0 2px 8px rgba(33,150,243,0.15); /* Sombra leve */
-    transition: background 0.2s, transform 0.2s, box-shadow 0.2s; /* Animações suaves */
-    border: none; /* Remove borda padrão */
-    cursor: pointer; /* Cursor de mãozinha */
-    outline: none; /* Remove contorno ao focar */
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 28px;
+    background: #371251;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.15);
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s; 
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
 
-/* Efeito ao passar o mouse sobre os botões */
 .btn-link:hover {
-    background: #410b68; /* Cor de fundo mais escura */
+    background: #410b68;
     color:#c157ff;
-    transform: scale(1.05); /* Aumenta levemente */
-    box-shadow: 0 4px 16px rgba(33,150,243,0.25); /* Sombra mais intensa */
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(33,150,243,0.25);
 }
 
 .btn-volta {
     display: inline-block;
-    margin: 10px auto 0 auto;      /* Menos espaço acima, centralizado */
-    padding: 4px 16px;        /* Bem pequeno e discreto */
+    margin: 10px auto 0 auto;
+    padding: 4px 16px;
     background: #2a1840;
     color: #fff;
     text-decoration: none;
     border-radius: 12px;
-    font-size: 1rem;             /* Mantém a fonte padrão do site */
-    font-family: inherit;        /* Usa a mesma fonte do body */
+    font-size: 1rem;
+    font-family: inherit;
     border: none;
     cursor: pointer;
     opacity: 0.7;
@@ -107,42 +97,31 @@ header h3 {
     background: #371251;
 }
 
-/* Estiliza o emoji de patinhas entre as opções */
-.options icon {
-    font-size: 3rem; /* Tamanho grande para o emoji */
-    margin: 0 30px; /* Espaço horizontal */
-    user-select: none; /* Não permite selecionar o emoji */
-    pointer-events: none; /* Não permite clicar/interagir */
-    position: relative; /* Permite ajustes de posição */
-    top: 0; /* Mantém alinhado verticalmente */
-}
-
-/* Estiliza os containers das imagens e botões */
 .lindinhas {
-    display: flex; /* Usa flexbox */
-    flex-direction: column; /* Alinha itens em coluna (vertical) */
-    align-items: center; /* Centraliza horizontalmente */
-    gap: 10px; /* Espaço entre imagem e botão */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .galeria{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria colunas responsivas */
-    gap: 10px; /* Espaçamento entre as imagens */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
     padding: 10px;
 }
 
 .galeria img{
-    width: 100%; /* Faz a imagem ocupar a largura do seu contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove espaço extra abaixo da imagem */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer{
     background: #371251;
     color: #fff;
     text-align: center;
-    padding: 4px 0;      /* Deixa o footer mais fino */
-    font-size: 0.95rem;  /* Tamanho de fonte um pouco menor */
+    padding: 4px 0;
+    font-size: 0.95rem;
     margin-top: 30px;
 }
