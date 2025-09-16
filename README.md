@@ -4,3 +4,7 @@
   Pretendo futuramente estilizar melhor as imagens e talvez adicionair mais!
 
   Houveram alguns problemas pra enviar o [código](https://github.com/mikaxhuu/Site_Fofinhas/tree/repo_padrao) pro main, então criei outra branch.
+
+Porém fiz uma versão desse projeto hospedado no firese:
+
+https://site-fofinhas.firebaseapp.com/
